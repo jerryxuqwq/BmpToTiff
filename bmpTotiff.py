@@ -5,7 +5,7 @@ from os import path
 import glob
 from io import BytesIO
 file_names = path.dirname('.')
-for file_names in glob.glob('*.bmp'):#找出所有的后缀为bmp的格式的图片
+for file_names in glob.glob('*.bmp'):
 	file_path = r'./'+file_names
 	out_path =os.path.splitext(file_path)[0]+'.tiff'
 	print(file_names)
@@ -17,7 +17,3 @@ for file_names in glob.glob('*.bmp'):#找出所有的后缀为bmp的格式的图
 	png2.save(out_path)
 	png1.close()
 print("done")
-	
-#with Image(file_name) as img:
-#    img.resize(200, 200) # width, height
-#    img.save(filename = 'result1.jpg') # png, jpg, bmp, gif, tiff All OK
