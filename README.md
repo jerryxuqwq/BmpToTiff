@@ -1,6 +1,6 @@
 # BmpToTiff
 Find all bmp file exist in the folder,then transform them to tiff file
-## Require
+## Requirement
 * PIL lib required 
 ## How to use
 * Clone or download to loacl
